@@ -38,5 +38,5 @@ git init
 git remote add origin $GITURL
 git add .
 git commit -am "npm publish"
-git push origin develop:npm --force
+git push origin master:npm --force
 npm publish
