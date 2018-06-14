@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>A-SVG</title>
+</head>
+<body>
+  <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  <script src="js/index.min.js"></script>
+
+  <a-scene>
+    <a-asset-item id="mozilla" src="svg/mozilla-letters.svg"></a-asset-item>
+
+    <a-sky color="#000000"></a-sky>
+
+    <a-svg
+      src="#mozilla"
+      proportional-scale="2"
+      extrude="0.5"
+      z-factor="0"
+      position="0 1.3 -5"
+    >
+    </a-svg>
+
+  </a-scene>
+</body>
+</html>
