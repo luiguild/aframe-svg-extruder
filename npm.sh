@@ -27,8 +27,6 @@ rm -rf npm
 mkdir npm
 mkdir npm/dist
 yarn version
-git commit -am "npm publish"
-git push
 cp package.json npm/package.json
 cp README.md npm/README.md
 cp readme-image.png npm/readme-image.png
