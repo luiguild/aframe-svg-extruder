@@ -23,6 +23,8 @@
 set -e
 GITURL=`git config remote.origin.url`
 cp dist/index.min.js example/js/index.min.js
+cp README.md example/README.md
+cp readme-image.png example/readme-image.png
 cd example
 rm -rf .git/
 git init

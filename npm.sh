@@ -21,6 +21,7 @@
 ###############################################################################
 
 set -e
+git checkout develop
 GITURL=`git config remote.origin.url`
 rm -rf npm
 mkdir npm

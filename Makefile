@@ -4,6 +4,9 @@ build: node_modules
 publish: build
 	./npm.sh
 
+deploy: build
+	./deploy.sh
+
 clean:
 	rm -rf dist
 
