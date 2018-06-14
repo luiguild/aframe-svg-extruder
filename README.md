@@ -53,5 +53,5 @@ This is the list of the available parameters.
 | **overrideColor** | String | null | false | Set an `hex (eg: #000000)` color if you want override the original colors of file |
 
 <p style="font-size: 12px">
-** *kekab-case params for webcomponent |  camelCase for entity**
+* kekab-case params for webcomponent |  camelCase for entity
 </p>
