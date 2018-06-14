@@ -55,3 +55,7 @@ This is the list of the available parameters.
 <p style="font-size: 12px">
 * kekab-case params for webcomponent |  camelCase for entity
 </p>
+
+
+## Help and contact
+PRs are appreciated, issues are welcomed. For any question, ping @luiguild at aframevr in Slack, Twitter or Telegram.
