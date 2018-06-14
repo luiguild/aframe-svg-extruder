@@ -6,22 +6,19 @@
 </head>
 <body>
   <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-  <script src="../js/index.min.js"></script>
+  <script src="js/index.min.js"></script>
 
   <a-scene>
-    <a-asset-item id="mozilla" src="svg/mozilla.svg"></a-asset-item>
+    <a-asset-item id="mozilla" src="svg/mozilla-letters.svg"></a-asset-item>
 
-    <a-entity
-      svg="src: #mozilla; proportionalScale: 2; extrude: 1; zFactor: 0.001;"
-      position="0 2 -5">
-    </a-entity>
+    <a-sky color="#000000"></a-sky>
 
     <a-svg
       src="#mozilla"
       proportional-scale="2"
-      extrude="1"
+      extrude="0.5"
       z-factor="0"
-      position="0 0 -5"
+      position="0 1.3 -5"
     >
     </a-svg>
 

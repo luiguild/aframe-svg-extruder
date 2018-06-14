@@ -49,11 +49,11 @@ AFRAME.registerComponent('svg', {
       const svgSrc = document.querySelector(this.data.src).attributes.src.value
       const pathsGroup = new AFRAME.THREE.Group()
 
-      this.data.extrude = parseInt(this.data.extrude) === 0
+      this.data.extrude = this.data.extrude === 0
         ? 0.001
         : this.data.extrude
 
-      this.data.zFactor = parseInt(this.data.zFactor) === 0
+      this.data.zFactor = this.data.zFactor === 0
         ? 0.001
         : this.data.zFactor
 
@@ -112,8 +112,8 @@ AFRAME.registerComponent('svg', {
             let offset = new AFRAME.THREE.Vector3()
 
             // get bounding box of group
-            for (let i = 0; i < pathsGroup.children.length; ++i) {
-              let geometry = pathsGroup.children[i].geometry
+            pathsGroup.children.forEach(elm => {
+              let geometry = elm.geometry
               geometry.computeBoundingBox()
               let childBox = geometry.boundingBox.getCenter()
 
@@ -126,19 +126,19 @@ AFRAME.registerComponent('svg', {
               boundingBox.max.x = Math.max(childBox.x, boundingBox.max.x)
               boundingBox.max.y = Math.max(childBox.y * 2, boundingBox.max.y)
               boundingBox.max.z = this.data.extrude
-            }
+            })
 
             // get center of bbox
             offset.addVectors(boundingBox.min, boundingBox.max)
             offset.multiplyScalar(-0.5)
 
             // move all meshes
-            for (let i = 0; i < pathsGroup.children.length; ++i) {
+            pathsGroup.children.forEach(elm => {
               // apply matrix translation
-              pathsGroup.children[i].geometry.applyMatrix(new AFRAME.THREE.Matrix4().makeTranslation(offset.x, offset.y, offset.z))
+              elm.geometry.applyMatrix(new AFRAME.THREE.Matrix4().makeTranslation(offset.x, offset.y, offset.z))
               // update bbox of each mesh
-              pathsGroup.children[i].geometry.computeBoundingBox()
-            }
+              elm.geometry.computeBoundingBox()
+            })
           }
         })
     }
