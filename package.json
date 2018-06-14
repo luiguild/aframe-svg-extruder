@@ -1,0 +1,43 @@
+{
+  "name": "aframe-svg-extruder",
+  "version": "1.0.2",
+  "description": "A-Frame component to extrude your SVG's files and use in WebVR scenes like magic 🌟",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luiguild/aframe-svg-extruder.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.0.0",
+    "eslint": "^3.7.1",
+    "eslint-config-standard": "^6.1.0",
+    "eslint-friendly-formatter": "^2.0.5",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-html": "^1.3.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "webpack": "^2.6.1"
+  },
+  "keywords": [],
+  "author": "Luigui Delyer <github@s1x.com.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luiguild/aframe-svg-extruder/issues"
+  },
+  "homepage": "https://github.com/luiguild/aframe-svg-extruder#readme",
+  "dependencies": {
+    "load-svg": "^1.0.0"
+  }
+}
