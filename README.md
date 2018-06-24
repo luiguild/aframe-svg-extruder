@@ -7,6 +7,13 @@ A-Frame component to extrude your SVG's files and use in WebVR scenes like magic
 https://luiguild.github.io/aframe-svg-extruder/
 
 ## Usage
+#### Development
+``` bash
+git clone https://github.com/luiguild/aframe-svg-extruder.git
+npm install
+npm start
+```
+
 #### Install
 ###### Using NPM
 ``` bash
