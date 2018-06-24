@@ -5,7 +5,9 @@
   "main": "dist/index.min.js",
   "scripts": {
     "dev": "webpack --watch",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "start": "concurrently -n npm:dev npm:http-server",
+    "http-server": "live-server example/"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,9 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "uglifyjs-webpack-plugin": "^0.4.3",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "concurrently": "^3.6.0",
+    "live-server": "^1.2.0"
   },
   "keywords": [],
   "author": "Luigui Delyer <github@s1x.com.br>",
