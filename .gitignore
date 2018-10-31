@@ -5,6 +5,10 @@ yarn-debug.log*
 yarn-error.log*
 npm
 
+# Ignore NPM lockfiles
+package-lock.json
+npm-shrinkwrap.json
+
 # Editor directories and files
 .idea
 .vscode
